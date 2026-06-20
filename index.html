@@ -192,9 +192,1640 @@
 <main id="postList">
   <!-- POST CARD TEMPLATE — duplicate this block for each new post -->
   <article class="card" data-tag="japanese">
-    <span class="stamp">日本語</span>
+    <span class="stamp">Science for Technology (SFT) — ICT</span>
     <p class="meta">2026.06.20 &nbsp;·&nbsp; කියවීමේ කාලය 4 min</p>
-    <h2><a href="ICT FOR SFT">N5 කාල වචන — සම්පූර්ණ ලැයිස්තුව සහ උදාහරණ</a></h2>
+    <h2><a href="computer-hardware-components-3.html<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SFT ICT Notes - Hardware, Number Systems, Software, Networking & Database</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap');
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans Sinhala', 'Noto Sans', sans-serif;
+    background: #f4f6f9;
+    color: #1f2a37;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+  }
+
+  .page {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 32px 24px 80px;
+  }
+
+  header {
+    background: linear-gradient(135deg, #1d4e89 0%, #2a6f97 100%);
+    color: white;
+    padding: 28px 24px;
+    border-radius: 14px;
+    margin-bottom: 28px;
+  }
+
+  header .subject {
+    font-size: 14px;
+    opacity: 0.85;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 26px;
+  }
+
+  section {
+    background: white;
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 22px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+
+  h2 {
+    font-size: 19px;
+    color: #1d4e89;
+    border-bottom: 2px solid #e3ebf5;
+    padding-bottom: 10px;
+    margin-top: 0;
+  }
+
+  h3 {
+    font-size: 16px;
+    color: #14497a;
+    margin-bottom: 6px;
+  }
+
+  .component-block {
+    background: #f7fafc;
+    border-left: 4px solid #2a6f97;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+  }
+
+  .component-block ul {
+    margin: 6px 0 0;
+    padding-left: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  th, td {
+    border: 1px solid #dde5ee;
+    padding: 10px 12px;
+    text-align: left;
+  }
+
+  th {
+    background: #1d4e89;
+    color: white;
+  }
+
+  tr:nth-child(even) { background: #f7fafc; }
+
+  .tip {
+    background: #fff7e6;
+    border: 1px solid #ffe0a3;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .work-block {
+    background: #f0f4fa;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-family: 'Noto Sans', monospace;
+    font-size: 14.5px;
+    margin: 10px 0;
+    white-space: pre-wrap;
+  }
+
+  .topic-divider {
+    text-align: center;
+    color: #b9c4d2;
+    margin: 6px 0 26px;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .diagram-box {
+    background: #f7fafc;
+    border: 1px solid #dde5ee;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 14px 0;
+    text-align: center;
+  }
+
+  .diagram-caption {
+    font-size: 13px;
+    color: #6b7a8d;
+    margin-top: 8px;
+  }
+
+  .topo-svg-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .topo-item {
+    text-align: center;
+  }
+
+  .topo-item h4 {
+    font-size: 14px;
+    color: #1d4e89;
+    margin: 8px 0 2px;
+  }
+
+  .device-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 14px 0;
+  }
+
+  .device-card {
+    background: #f7fafc;
+    border: 1px solid #dde5ee;
+    border-radius: 10px;
+    padding: 14px;
+    width: 140px;
+    text-align: center;
+  }
+
+  .device-card .icon {
+    font-size: 32px;
+    margin-bottom: 6px;
+  }
+
+  .device-card .label {
+    font-weight: 600;
+    color: #1d4e89;
+    font-size: 14px;
+  }
+
+  .db-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 14.5px;
+  }
+
+  .db-table th, .db-table td {
+    border: 1px solid #c8d3e0;
+    padding: 9px 12px;
+    text-align: left;
+  }
+
+  .db-table th.pk-col, .db-table td.pk-col {
+    background: #fdf3e3;
+    border: 2px solid #caa84a;
+  }
+
+  .db-table th { background: #1d4e89; color: white; }
+  .db-table th.pk-col { background: #caa84a; }
+
+  .label-tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 1px 8px;
+    border-radius: 999px;
+    margin-left: 6px;
+    font-weight: 600;
+  }
+
+  .tag-field { background: #e3ebf5; color: #1d4e89; }
+  .tag-record { background: #eaf6ee; color: #1d7a3d; }
+  .tag-pk { background: #fdf3e3; color: #9a7a1f; }
+
+  /* ---- Network diagrams ---- */
+  .diagram-box {
+    background: #f7fafc;
+    border: 1px solid #e3ebf5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 14px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .diagram-caption {
+    text-align: center;
+    font-size: 13px;
+    color: #5a6b7d;
+    margin-top: -6px;
+    margin-bottom: 16px;
+  }
+
+  .node {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #1f2a37;
+  }
+
+  .node .icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    background: #2a6f97;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .node.server .icon { background: #1d4e89; }
+  .node.router .icon { background: #c0392b; }
+  .node.cloud .icon { background: #2a9d8f; border-radius: 50%; }
+
+  /* LAN/WAN diagram */
+  .lan-wan-diagram {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .cloud-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .lan-clusters {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .lan-cluster {
+    border: 2px dashed #2a6f97;
+    border-radius: 12px;
+    padding: 14px 16px 10px;
+    text-align: center;
+  }
+
+  .lan-cluster-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1d4e89;
+    margin-bottom: 8px;
+  }
+
+  .lan-devices {
+    display: flex;
+    gap: 14px;
+  }
+
+  .connector-line {
+    width: 2px;
+    height: 24px;
+    background: #94a8c2;
+  }
+
+  /* Topology diagrams */
+  .topology-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 14px 0;
+  }
+
+  .topology-card {
+    background: #f7fafc;
+    border: 1px solid #e3ebf5;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .topology-title {
+    font-weight: 600;
+    color: #1d4e89;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .topology-svg-wrap { display: flex; justify-content: center; margin-bottom: 8px; }
+
+  .topology-desc { font-size: 13px; color: #5a6b7d; }
+
+  /* Device cards */
+  .device-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+    margin: 14px 0;
+  }
+
+  .device-card {
+    background: #f7fafc;
+    border-left: 4px solid #2a6f97;
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+
+  .device-card .icon-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+
+  .device-card .icon-row .icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #1d4e89;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .device-card .icon-row .name {
+    font-weight: 600;
+    color: #1d4e89;
+    font-size: 14.5px;
+  }
+
+  .device-card p {
+    margin: 0;
+    font-size: 13.5px;
+  }
+
+  .quiz-q {
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eef1f5;
+  }
+
+  .quiz-q:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  .quiz-q p.question {
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+
+  .options {
+    display: grid;
+    gap: 6px;
+    margin-left: 4px;
+  }
+
+  .option {
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #f7fafc;
+  }
+
+  details {
+    margin-top: 10px;
+    background: #eaf6ee;
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #1d7a3d;
+  }
+
+  details[open] summary { margin-bottom: 6px; }
+
+  .answer-explain {
+    font-size: 14.5px;
+    color: #234;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #1d4e89;
+    color: white;
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 13px;
+    color: #8a97a8;
+    margin-top: 30px;
+  }
+
+  @media print {
+    body { background: white; }
+    section { box-shadow: none; border: 1px solid #ddd; }
+    details { background: #f0f0f0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="subject">Science for Technology (SFT) — ICT කොටස</div>
+    <h1>ICT Study Notes</h1>
+  </header>
+
+  <section>
+    <span class="badge">මූලික සංකල්ප</span>
+    <h2>පරිගණකයක මූලික සංරචක</h2>
+    <p>පරිගණකයක් කියන්නේ මූලිකවම මේ කොටස් 4න් සැදුණු එකක්.</p>
+
+    <div class="component-block">
+      <h3>1. Input Devices (ආදාන උපාංග)</h3>
+      <p>පරිගණකයට data ඇතුල් කරන උපාංග.</p>
+      <ul>
+        <li>Keyboard</li>
+        <li>Mouse</li>
+        <li>Scanner</li>
+        <li>Microphone</li>
+        <li>Webcam</li>
+        <li>Joystick</li>
+      </ul>
+    </div>
+
+    <div class="component-block">
+      <h3>2. Output Devices (ප්‍රතිදාන උපාංග)</h3>
+      <p>පරිගණකයෙන් result පෙන්වන/ලබාදෙන උපාංග.</p>
+      <ul>
+        <li>Monitor</li>
+        <li>Printer</li>
+        <li>Speaker</li>
+        <li>Projector</li>
+      </ul>
+    </div>
+
+    <div class="component-block">
+      <h3>3. Storage Devices (ආචයන උපාංග)</h3>
+      <p>Data ගබඩා කරගන්න උපාංග. මේවා දෙකකට බෙදනවා:</p>
+      <ul>
+        <li><strong>Primary Storage</strong> — RAM, ROM (පරිගණකය වැඩ කරද්දී use වෙන, fast, temporary)</li>
+        <li><strong>Secondary Storage</strong> — Hard Disk, SSD, Pen Drive, CD/DVD (permanent storage, slower)</li>
+      </ul>
+    </div>
+
+    <div class="component-block">
+      <h3>4. Processing Unit (සැකසුම් ඒකකය)</h3>
+      <p><strong>CPU (Central Processing Unit)</strong> — පරිගණකයේ "මොළය". මේකේ ප්‍රධාන කොටස් දෙකක් තියෙනවා:</p>
+      <ul>
+        <li><strong>ALU (Arithmetic Logic Unit)</strong> — ගණිත/logic operations කරනවා</li>
+        <li><strong>CU (Control Unit)</strong> — පරිගණකයේ සියලුම operations control කරනවා</li>
+      </ul>
+    </div>
+
+    <div class="tip">
+      💡 <strong>මතක තියාගන්න trick එකක්:</strong> "I-P-O-S" = Input → Processing → Output → Storage (data flow එක)
+    </div>
+  </section>
+
+  <section>
+    <span class="badge">Practice</span>
+    <h2>Practice Quiz — Computer Hardware/Components</h2>
+
+    <div class="quiz-q">
+      <p class="question">1. පහත දැක්වෙන උපාංග අතරින් Input Device එකක් නොවන්නේ කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Scanner</div>
+        <div class="option">b) Keyboard</div>
+        <div class="option">c) Printer</div>
+        <div class="option">d) Mouse</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Printer</strong> — Printer එක Output Device එකක්. (Computer එකෙන් result එක paper එකට print කරනවා.) අනිත් ඔක්කොම (Scanner, Keyboard, Mouse) input devices.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">2. CPU එකේ ගණිතමය හා තාර්කික ක්‍රියා (Arithmetic & Logical operations) සිදු කරන්නේ කුමන කොටස මගින්ද?</p>
+      <div class="options">
+        <div class="option">a) Control Unit (CU)</div>
+        <div class="option">b) ALU</div>
+        <div class="option">c) RAM</div>
+        <div class="option">d) ROM</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) ALU</strong> — ALU (Arithmetic Logic Unit) තමයි +, -, ×, ÷ වගේ ගණිතමය operations සහ comparisons (>, <, = වගේ logical operations) handle කරන්නේ.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">3. පහත කුමන storage device එක Primary Storage ලෙස සැලකේද?</p>
+      <div class="options">
+        <div class="option">a) Hard Disk</div>
+        <div class="option">b) Pen Drive</div>
+        <div class="option">c) RAM</div>
+        <div class="option">d) DVD</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) RAM</strong> — RAM එක Primary Storage. Hard Disk, Pen Drive, DVD තුනම Secondary Storage devices.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">4. Computer එක off කළාම data සියල්ල මැකී යන (volatile) storage type එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) ROM</div>
+        <div class="option">b) RAM</div>
+        <div class="option">c) Hard Disk</div>
+        <div class="option">d) SSD</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) RAM</strong> — RAM එක Volatile. Power off වුණාම data ඔක්කොම මැකිලා යනවා. ROM, Hard Disk, SSD තුන Non-volatile — Power off වුණත් data රැඳෙනවා.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">5. පහත දැක්වෙන උපාංග අතරින් Output Device එකක් කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Microphone</div>
+        <div class="option">b) Joystick</div>
+        <div class="option">c) Speaker</div>
+        <div class="option">d) Webcam</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Speaker</strong> — Speaker එක Output Device (sound output කරනවා). Microphone, Joystick, Webcam තුනම Input devices.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">6. පරිගණකයේ සියලුම operations control කරන CPU කොටස කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) ALU</div>
+        <div class="option">b) RAM</div>
+        <div class="option">c) Control Unit (CU)</div>
+        <div class="option">d) ROM</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Control Unit (CU)</strong> — CU තමයි CPU එකේ "manager" - data flow එක, instructions execute කරන sequence එක, අනිත් components coordinate කරන එක control කරන්නේ.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">7. Secondary Storage Device එකකට නොගැලපෙන එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) SSD</div>
+        <div class="option">b) Hard Disk</div>
+        <div class="option">c) RAM</div>
+        <div class="option">d) CD/DVD</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) RAM</strong> — RAM Primary Storage. SSD, Hard Disk, CD/DVD තුනම Secondary Storage devices.</p>
+      </details>
+    </div>
+  </section>
+
+  <div class="topic-divider">● ● ●</div>
+
+  <section>
+    <span class="badge">Topic 2</span>
+    <h2>Number Systems</h2>
+    <p>Computer එක තේරුම් ගන්න data ඔක්කොම numbers විදිහට convert කරගන්නවා. ඒකට පාවිච්චි කරන system ටික බලමු.</p>
+
+    <div class="component-block">
+      <h3>1. Decimal Number System (දශම ක්‍රමය) — Base 10</h3>
+      <p>අපි දවසේ පාවිච්චි කරන සාමාන්‍ය number system එක.</p>
+      <ul>
+        <li>Digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 (මුළු 10ක්)</li>
+        <li>උදා: 245, 9, 1024</li>
+      </ul>
+    </div>
+
+    <div class="component-block">
+      <h3>2. Binary Number System (ද්වීමය ක්‍රමය) — Base 2</h3>
+      <p><strong>Computer එක තේරුම් ගන්නේ Binary විතරයි.</strong></p>
+      <ul>
+        <li>Digits: 0 සහ 1 විතරයි (මුළු 2ක්)</li>
+        <li>"Bit" කියන්නේ 0 හරි 1 හරි එක digit එකට.</li>
+        <li>උදා: 1010, 1101, 11111111</li>
+      </ul>
+    </div>
+
+    <div class="component-block">
+      <h3>3. Octal Number System — Base 8</h3>
+      <ul>
+        <li>Digits: 0 සිට 7 දක්වා (මුළු 8ක්)</li>
+        <li>උදා: 17, 234</li>
+      </ul>
+    </div>
+
+    <div class="component-block">
+      <h3>4. Hexadecimal Number System — Base 16</h3>
+      <ul>
+        <li>Digits: 0-9 සහ A, B, C, D, E, F (A=10, B=11, C=12, D=13, E=14, F=15)</li>
+        <li>Color codes, memory addresses වගේ දේවල් වලට use කරනවා.</li>
+        <li>උදා: 1A, FF, 3C</li>
+      </ul>
+    </div>
+
+    <h3 style="margin-top:18px;">මූලික Conversions</h3>
+
+    <p><strong>Decimal → Binary</strong> (2න් බෙදලා remainder ටික පහළ සිට උඩට ලියනවා):</p>
+    <p>උදා: 13 → Binary</p>
+    <div class="work-block">13 ÷ 2 = 6  ඉතිරිය 1
+ 6 ÷ 2 = 3  ඉතිරිය 0
+ 3 ÷ 2 = 1  ඉතිරිය 1
+ 1 ÷ 2 = 0  ඉතිරිය 1</div>
+    <p>පහළ සිට උඩට කියවන්න → <strong>13 = 1101 (Binary)</strong></p>
+
+    <p><strong>Binary → Decimal</strong> (එක එක digit එක 2 power එකෙන් multiply කරලා එකතු කරනවා):</p>
+    <p>උදා: 1101 → Decimal</p>
+    <div class="work-block">1×2³ + 1×2² + 0×2¹ + 1×2⁰
+= 8 + 4 + 0 + 1
+= 13</div>
+
+    <div class="tip">
+      💡 <strong>මතක තියාගන්න:</strong> Binary digit එකක bit කියනවා. Bits 8ක් = 1 Byte.
+    </div>
+  </section>
+
+  <section>
+    <span class="badge">Practice</span>
+    <h2>Practice Quiz — Number Systems</h2>
+
+    <div class="quiz-q">
+      <p class="question">1. Computer එකක් මූලිකවම data process කරන්නේ කුමන number system එක භාවිතා කරලාද?</p>
+      <div class="options">
+        <div class="option">a) Decimal</div>
+        <div class="option">b) Octal</div>
+        <div class="option">c) Binary</div>
+        <div class="option">d) Hexadecimal</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Binary</strong> — Computer hardware එක electronic signals දෙකකින් (ON/OFF) තමයි වැඩ කරන්නේ. ඒ දෙක තමයි Binary වල 1 සහ 0 ලෙස represent වෙන්නේ.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">2. Binary number system එකේ භාවිතා වෙන digits මොනවාද?</p>
+      <div class="options">
+        <div class="option">a) 0-9</div>
+        <div class="option">b) 0 සහ 1</div>
+        <div class="option">c) 0-7</div>
+        <div class="option">d) 0-9, A-F</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) 0 සහ 1</strong> — Binary (Base 2) කියන්නේ digits දෙකක් විතරක් use කරන number system එකක්.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">3. Decimal number 9 එක Binary වලට convert කළාම ලැබෙන්නේ කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) 1001</div>
+        <div class="option">b) 1100</div>
+        <div class="option">c) 1010</div>
+        <div class="option">d) 0110</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>a) 1001</strong> — 9÷2=4 ඉතිරිය 1, 4÷2=2 ඉතිරිය 0, 2÷2=1 ඉතිරිය 0, 1÷2=0 ඉතිරිය 1. පහළ සිට උඩට → 1001</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">4. Binary number 1010 එක Decimal වලට convert කළාම ලැබෙන්නේ කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) 8</div>
+        <div class="option">b) 9</div>
+        <div class="option">c) 10</div>
+        <div class="option">d) 12</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) 10</strong> — 1010 = 1×2³ + 0×2² + 1×2¹ + 0×2⁰ = 8+0+2+0 = 10</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">5. Hexadecimal number system එක Base කීයක්ද?</p>
+      <div class="options">
+        <div class="option">a) Base 8</div>
+        <div class="option">b) Base 10</div>
+        <div class="option">c) Base 2</div>
+        <div class="option">d) Base 16</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>d) Base 16</strong> — Hexadecimal එකේ digits 16ක් තියෙනවා (0-9 සහ A-F).</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">6. Hexadecimal එකේ 'A' කියන digit එක Decimal වලින් කීයක්ද?</p>
+      <div class="options">
+        <div class="option">a) 9</div>
+        <div class="option">b) 10</div>
+        <div class="option">c) 11</div>
+        <div class="option">d) 16</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) 10</strong> — Hexadecimal: A=10, B=11, C=12, D=13, E=14, F=15.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">7. "Bit" කියන්නේ මොකක්ද?</p>
+      <div class="options">
+        <div class="option">a) Bytes 8ක්</div>
+        <div class="option">b) Binary digit එකක් (0 හෝ 1)</div>
+        <div class="option">c) Hexadecimal digit එකක්</div>
+        <div class="option">d) Decimal number එකක්</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Binary digit එකක් (0 හෝ 1)</strong> — "Bit" කියන්නේ Binary digIT වචන දෙකේ කෙටි කිරීමක්.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">8. Octal number system එකේ භාවිතා වෙන digits මොනවාද?</p>
+      <div class="options">
+        <div class="option">a) 0-9</div>
+        <div class="option">b) 0-1</div>
+        <div class="option">c) 0-7</div>
+        <div class="option">d) 0-15</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) 0-7</strong> — Octal (Base 8) එකේ digits 0 සිට 7 දක්වා (මුළු 8ක්) use වෙනවා.</p>
+      </details>
+    </div>
+  </section>
+
+  <div class="topic-divider">● ● ●</div>
+
+  <section>
+    <span class="badge">Topic 3</span>
+    <h2>Software (System / Application Software)</h2>
+
+    <p><strong>Software කියන්නේ මොකක්ද?</strong></p>
+    <p>Computer hardware එක control කරන, instructions/programs වලින් සැදුණු දේ — Software. Hardware එක (touchable parts) සහ Software එක (instructions, touch කරන්න බෑ) අතර වෙනස මතක තියාගන්න.</p>
+    <p>Software මූලිකවම කොටස් දෙකකට බෙදනවා:</p>
+
+    <div class="component-block">
+      <h3>1. System Software (පද්ධති මෘදුකාංග)</h3>
+      <p>Computer hardware එක manage කරන, අනිත් programs run වෙන්න base එක දෙන software.</p>
+      <ul>
+        <li><strong>Operating System (OS)</strong> — Hardware සහ user අතර bridge එක. (Windows, macOS, Linux, Android)</li>
+        <li><strong>Device Drivers</strong> — Specific hardware (printer, graphics card) control කරන්න OS එකට උදව් කරන programs</li>
+        <li><strong>Utility Software</strong> — System maintenance සඳහා (Antivirus, Disk Cleanup, File Compression tools)</li>
+      </ul>
+    </div>
+
+    <div class="component-block">
+      <h3>2. Application Software (යෙදුම් මෘදුකාංග)</h3>
+      <p>User කෙනෙක්ට specific task එකක් කරගන්න උදව් කරන software.</p>
+      <ul>
+        <li><strong>Word Processors</strong> — MS Word, Google Docs</li>
+        <li><strong>Spreadsheets</strong> — MS Excel, Google Sheets</li>
+        <li><strong>Web Browsers</strong> — Chrome, Firefox</li>
+        <li>Media Players, Games, Design Software වගේ දේවල්</li>
+      </ul>
+    </div>
+
+    <h3 style="margin-top:18px;">System Software vs Application Software</h3>
+    <table>
+      <tr><th></th><th>System Software</th><th>Application Software</th></tr>
+      <tr><td>Purpose</td><td>Computer එක operate කරන්න</td><td>User task එකක් කරගන්න</td></tr>
+      <tr><td>උදාහරණ</td><td>Windows, Linux</td><td>MS Word, Photoshop</td></tr>
+      <tr><td>අවශ්‍යතාවය</td><td>Computer එක start වෙන්නම ඕන</td><td>User කෙනෙක් install කරගන්නවා</td></tr>
+      <tr><td>Dependency</td><td>Application software වලට base එක දෙනවා</td><td>System software මත depend වෙනවා</td></tr>
+    </table>
+
+    <div class="tip">
+      💡 <strong>මතක තියාගන්න:</strong> OS එක නැතුව computer එකක් use කරන්න බෑ — ඒක තමයි System Software වල "core" එක.
+    </div>
+  </section>
+
+  <section>
+    <span class="badge">Practice</span>
+    <h2>Practice Quiz — Software (System/Application)</h2>
+
+    <div class="quiz-q">
+      <p class="question">1. Hardware සහ user අතර "bridge" එක ලෙස ක්‍රියා කරන software එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Web Browser</div>
+        <div class="option">b) Operating System</div>
+        <div class="option">c) Antivirus</div>
+        <div class="option">d) MS Word</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Operating System</strong> — OS එක තමයි hardware එක සහ user අතර interaction එක possible කරන "bridge" එක. OS නැතුව user කෙනෙක්ට hardware එක control කරන්න බෑ.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">2. පහත දැක්වෙන ඒවායින් System Software එකක් කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) MS Excel</div>
+        <div class="option">b) Photoshop</div>
+        <div class="option">c) Device Driver</div>
+        <div class="option">d) Google Chrome</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Device Driver</strong> — Device Driver එක System Software එකක්. MS Excel, Photoshop, Google Chrome තුනම Application Software.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">3. පහත දැක්වෙන ඒවායින් Application Software එකක් කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Windows</div>
+        <div class="option">b) Linux</div>
+        <div class="option">c) Device Driver</div>
+        <div class="option">d) MS Word</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>d) MS Word</strong> — MS Word එක user task එකක් (document එකක් type කරන්න) කරගන්න software එකක්, ඒ නිසා Application Software. Windows, Linux, Device Driver තුනම System Software.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">4. Printer එක වැනි specific hardware එකක් control කරන්න OS එකට උදව් කරන software එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Utility Software</div>
+        <div class="option">b) Device Driver</div>
+        <div class="option">c) Web Browser</div>
+        <div class="option">d) Application Software</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Device Driver</strong> — Device Driver එක specific hardware එකක් (printer, graphics card වගේ) OS එකට හඳුනාගන්න සහ control කරන්න උදව් කරනවා.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">5. Antivirus software එක classify වෙන්නේ කුමක් යටතේද?</p>
+      <div class="options">
+        <div class="option">a) Application Software</div>
+        <div class="option">b) System Software (Utility)</div>
+        <div class="option">c) Operating System</div>
+        <div class="option">d) Device Driver</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) System Software (Utility)</strong> — Antivirus එක Utility Software කොටසට වැටෙනවා — System maintenance/protection සඳහා use කරන software.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">6. පහත ඒවායින් Operating System එකක් නොවන්නේ කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Windows</div>
+        <div class="option">b) macOS</div>
+        <div class="option">c) Android</div>
+        <div class="option">d) MS Word</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>d) MS Word</strong> — MS Word එක Application Software. Windows, macOS, Android තුනම Operating Systems.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">7. Application Software, System Software මත depend වෙනවාද?</p>
+      <div class="options">
+        <div class="option">a) ඔව්, Application Software, System Software (OS) මත depend වෙනවා</div>
+        <div class="option">b) නැහැ, දෙකම independent</div>
+        <div class="option">c) System Software, Application Software මත depend වෙනවා</div>
+        <div class="option">d) දෙකම එකම දේ</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>a) ඔව්, Application Software, System Software (OS) මත depend වෙනවා</strong> — Application Software run වෙන්න කලින් OS එක install වෙලා තිබිය යුතුයි. OS එක තමයි base layer එක ලබාදෙන්නේ.</p>
+      </details>
+    </div>
+  </section>
+
+  <div class="topic-divider">● ● ●</div>
+
+  <section>
+    <span class="badge">Topic 4</span>
+    <h2>Networking — මූලික සංකල්ප</h2>
+
+    <p><strong>Network එකක් කියන්නේ මොකක්ද?</strong></p>
+    <p>Resources (data, printers, internet) share කරගන්න විදිහට connect කරපු computers සහ devices group එකක්.</p>
+
+    <h3 style="margin-top:18px;">Network Types</h3>
+
+    <div class="component-block">
+      <h3>1. LAN (Local Area Network)</h3>
+      <ul>
+        <li>කුඩා area එකක (office එකක්, school එකක්, ගෙදරක) limited computers connect කරපු network එක</li>
+        <li>High speed, low cost</li>
+      </ul>
+    </div>
+
+    <div class="component-block">
+      <h3>2. WAN (Wide Area Network)</h3>
+      <ul>
+        <li>විශාල geographical area එකක් (රටවල්, continents) cover කරන network</li>
+        <li><strong>Internet</strong> තමයි ලොකුම WAN example එක</li>
+      </ul>
+    </div>
+
+    <div class="diagram-box">
+      <svg viewBox="0 0 480 180" width="100%" style="max-width:460px;">
+        <!-- LAN cloud -->
+        <rect x="20" y="40" width="160" height="100" rx="14" fill="#eaf2fb" stroke="#2a6f97" stroke-width="1.5"/>
+        <text x="100" y="32" text-anchor="middle" font-size="13" fill="#1d4e89" font-weight="600">LAN — Office</text>
+        <circle cx="55" cy="75" r="10" fill="#2a6f97"/>
+        <circle cx="100" cy="65" r="10" fill="#2a6f97"/>
+        <circle cx="145" cy="75" r="10" fill="#2a6f97"/>
+        <circle cx="80" cy="115" r="10" fill="#2a6f97"/>
+        <circle cx="125" cy="115" r="10" fill="#2a6f97"/>
+        <line x1="55" y1="75" x2="100" y2="65" stroke="#9db4cc" stroke-width="1.5"/>
+        <line x1="100" y1="65" x2="145" y2="75" stroke="#9db4cc" stroke-width="1.5"/>
+        <line x1="55" y1="75" x2="80" y2="115" stroke="#9db4cc" stroke-width="1.5"/>
+        <line x1="145" y1="75" x2="125" y2="115" stroke="#9db4cc" stroke-width="1.5"/>
+        <line x1="80" y1="115" x2="125" y2="115" stroke="#9db4cc" stroke-width="1.5"/>
+
+        <!-- connecting line to WAN -->
+        <line x1="180" y1="90" x2="290" y2="90" stroke="#c8d3e0" stroke-width="2" stroke-dasharray="5,4"/>
+        <text x="235" y="82" text-anchor="middle" font-size="11" fill="#8a97a8">Internet</text>
+
+        <!-- WAN cloud -->
+        <ellipse cx="380" cy="90" rx="90" ry="55" fill="#fdf3e3" stroke="#caa84a" stroke-width="1.5"/>
+        <text x="380" y="42" text-anchor="middle" font-size="13" fill="#9a7a1f" font-weight="600">WAN — World</text>
+        <circle cx="340" cy="80" r="8" fill="#caa84a"/>
+        <circle cx="390" cy="70" r="8" fill="#caa84a"/>
+        <circle cx="420" cy="100" r="8" fill="#caa84a"/>
+        <circle cx="355" cy="110" r="8" fill="#caa84a"/>
+        <line x1="340" y1="80" x2="390" y2="70" stroke="#e3cd8e" stroke-width="1.5"/>
+        <line x1="390" y1="70" x2="420" y2="100" stroke="#e3cd8e" stroke-width="1.5"/>
+        <line x1="355" y1="110" x2="390" y2="70" stroke="#e3cd8e" stroke-width="1.5"/>
+        <line x1="355" y1="110" x2="420" y2="100" stroke="#e3cd8e" stroke-width="1.5"/>
+      </svg>
+      <p class="diagram-caption">LAN එක කුඩා, එක location එකක — WAN එක විශාල geographical area cover කරනවා (Internet එක ලොකුම WAN එක)</p>
+    </div>
+
+    <h3 style="margin-top:22px;">Network Topologies (Connection Patterns)</h3>
+
+    <div class="topo-svg-wrap">
+      <div class="topo-item">
+        <svg width="140" height="110" viewBox="0 0 140 110">
+          <line x1="15" y1="55" x2="125" y2="55" stroke="#2a6f97" stroke-width="3"/>
+          <circle cx="25" cy="55" r="8" fill="#1d4e89"/>
+          <circle cx="55" cy="55" r="8" fill="#1d4e89"/>
+          <circle cx="85" cy="55" r="8" fill="#1d4e89"/>
+          <circle cx="115" cy="55" r="8" fill="#1d4e89"/>
+        </svg>
+        <h4>Bus Topology</h4>
+      </div>
+
+      <div class="topo-item">
+        <svg width="140" height="110" viewBox="0 0 140 110">
+          <circle cx="70" cy="55" r="10" fill="#caa84a"/>
+          <circle cx="70" cy="15" r="8" fill="#1d4e89"/>
+          <circle cx="115" cy="35" r="8" fill="#1d4e89"/>
+          <circle cx="115" cy="80" r="8" fill="#1d4e89"/>
+          <circle cx="25" cy="80" r="8" fill="#1d4e89"/>
+          <circle cx="25" cy="35" r="8" fill="#1d4e89"/>
+          <line x1="70" y1="55" x2="70" y2="15" stroke="#9db4cc" stroke-width="2"/>
+          <line x1="70" y1="55" x2="115" y2="35" stroke="#9db4cc" stroke-width="2"/>
+          <line x1="70" y1="55" x2="115" y2="80" stroke="#9db4cc" stroke-width="2"/>
+          <line x1="70" y1="55" x2="25" y2="80" stroke="#9db4cc" stroke-width="2"/>
+          <line x1="70" y1="55" x2="25" y2="35" stroke="#9db4cc" stroke-width="2"/>
+        </svg>
+        <h4>Star Topology</h4>
+      </div>
+
+      <div class="topo-item">
+        <svg width="140" height="110" viewBox="0 0 140 110">
+          <circle cx="70" cy="55" r="38" fill="none" stroke="#9db4cc" stroke-width="2"/>
+          <circle cx="70" cy="17" r="8" fill="#1d4e89"/>
+          <circle cx="105" cy="40" r="8" fill="#1d4e89"/>
+          <circle cx="92" cy="88" r="8" fill="#1d4e89"/>
+          <circle cx="48" cy="88" r="8" fill="#1d4e89"/>
+          <circle cx="35" cy="40" r="8" fill="#1d4e89"/>
+        </svg>
+        <h4>Ring Topology</h4>
+      </div>
+    </div>
+
+    <table>
+      <tr><th>Topology</th><th>විස්තරය</th></tr>
+      <tr><td>Bus</td><td>සියලුම devices එක central cable එකකට connect වෙනවා</td></tr>
+      <tr><td>Star</td><td>සියලුම devices central hub/switch එකකට connect වෙනවා</td></tr>
+      <tr><td>Ring</td><td>Devices ring එකක් විදිහට connect වෙලා, data එක direction එකකට යනවා</td></tr>
+    </table>
+
+    <h3 style="margin-top:22px;">වැදගත් Networking Devices</h3>
+
+    <div class="device-row">
+      <div class="device-card">
+        <div class="icon">📡</div>
+        <div class="label">Router</div>
+        <div style="font-size:12.5px;color:#5a6678;">Networks දෙකක් අතර data forward කරනවා</div>
+      </div>
+      <div class="device-card">
+        <div class="icon">🔌</div>
+        <div class="label">Switch</div>
+        <div style="font-size:12.5px;color:#5a6678;">LAN එකක devices connect කරනවා</div>
+      </div>
+      <div class="device-card">
+        <div class="icon">☎️</div>
+        <div class="label">Modem</div>
+        <div style="font-size:12.5px;color:#5a6678;">Digital ⟷ Analog signal convert කරනවා</div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:18px;">වෙනත් වැදගත් Terms</h3>
+    <ul>
+      <li><strong>IP Address</strong> — Network එකේ device එකක් identify කරන unique number (උදා: 192.168.1.1)</li>
+      <li><strong>Protocol</strong> — Devices අතර data exchange කරගන්න rules set එක (උදා: HTTP, FTP, TCP/IP)</li>
+    </ul>
+
+    <h3 style="margin-top:18px;">Internet vs Intranet</h3>
+    <table>
+      <tr><th></th><th>Internet</th><th>Intranet</th></tr>
+      <tr><td>Access</td><td>ලෝකයේ ඕනෑම කෙනෙක්ට</td><td>Organization එකක employees ටට විතරයි</td></tr>
+      <tr><td>Size</td><td>Global</td><td>Private/Limited</td></tr>
+      <tr><td>උදාහරණ</td><td>Google, YouTube</td><td>Company internal portal</td></tr>
+    </table>
+
+    <div class="tip">
+      💡 <strong>මතක තියාගන්න:</strong> LAN = කුඩා (Local), WAN = ලොකු (Wide/World), Internet = ලොකුම WAN එක
+    </div>
+  </section>
+
+  <section>
+    <span class="badge">Practice</span>
+    <h2>Practice Quiz — Networking</h2>
+
+    <div class="quiz-q">
+      <p class="question">1. කුඩා area එකක (office/school/ගෙදර) limited computers connect කරපු, high speed, low cost network එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) WAN</div>
+        <div class="option">b) MAN</div>
+        <div class="option">c) LAN</div>
+        <div class="option">d) Internet</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) LAN</strong> — LAN (Local Area Network) කුඩා, limited area එකක් (office, school, ගෙදර) cover කරන network එක.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">2. ලොකුම WAN example එක ලෙස සැලකෙන්නේ කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) LAN</div>
+        <div class="option">b) Intranet</div>
+        <div class="option">c) Internet</div>
+        <div class="option">d) Bluetooth</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Internet</strong> — Internet එක ලොකුම WAN (Wide Area Network) example එක, මුළු ලෝකයම cover කරනවා.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">3. නගරයක් (city) වගේ area එකක් cover කරන, LAN ට වඩා ලොකු, WAN ට වඩා පොඩි network type එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) MAN</div>
+        <div class="option">b) PAN</div>
+        <div class="option">c) LAN</div>
+        <div class="option">d) WAN</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>a) MAN</strong> — MAN (Metropolitan Area Network) නගරයක් වගේ area එකක් cover කරනවා — LAN ට වඩා ලොකු, WAN ට වඩා පොඩි.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">4. සියලුම devices එක central cable එකකට connect වෙන topology එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Star</div>
+        <div class="option">b) Ring</div>
+        <div class="option">c) Bus</div>
+        <div class="option">d) Mesh</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Bus</strong> — Bus Topology එකේදී සියලුම devices එක central cable එකකට connect වෙනවා.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">5. සියලුම devices central hub/switch එකකට connect වෙන topology එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Bus</div>
+        <div class="option">b) Star</div>
+        <div class="option">c) Ring</div>
+        <div class="option">d) Tree</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Star</strong> — Star Topology එකේදී සියලුම devices central hub/switch එකකට connect වෙනවා. එක device එකක් fail වුණත් අනිත් ඒවාට බලපාන්නේ නැහැ.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">6. Devices ring එකක් විදිහට connect වෙලා, data එක direction එකකට යන topology එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Star</div>
+        <div class="option">b) Bus</div>
+        <div class="option">c) Ring</div>
+        <div class="option">d) Hybrid</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Ring</strong> — Ring Topology එකේදී devices ring එකක් විදිහට connect වෙලා, data එක එක direction එකකට (loop එකක්) travel වෙනවා.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">7. Networks දෙකක් අතර data forward කරන, Internet connection share කරන device එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Switch</div>
+        <div class="option">b) Modem</div>
+        <div class="option">c) Router</div>
+        <div class="option">d) Hub</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Router</strong> — Router එක networks දෙකක් අතර data forward කරනවා සහ Internet connection එක share කරනවා.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">8. Digital signal එක Analog signal වලට convert කරලා internet connection ලබාදෙන device එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Router</div>
+        <div class="option">b) Switch</div>
+        <div class="option">c) Modem</div>
+        <div class="option">d) Server</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Modem</strong> — Modem (Modulator-Demodulator) digital signal එක analog signal වලට, ඒ වගේම අනිත් අතටත් convert කරලා internet connection ලබාදෙනවා.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">9. Network එකේ device එකක් identify කරන unique number එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) MAC Address</div>
+        <div class="option">b) IP Address</div>
+        <div class="option">c) URL</div>
+        <div class="option">d) Protocol</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) IP Address</strong> — IP Address එක network එකේ device එකක් identify කරන unique number එක (උදා: 192.168.1.1).</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">10. Organization එකක employees ටට විතරක් access කරන්න පුළුවන් private network එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Internet</div>
+        <div class="option">b) WAN</div>
+        <div class="option">c) Intranet</div>
+        <div class="option">d) LAN</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Intranet</strong> — Intranet එක organization එකක employees ටට විතරක් limited වෙච්ච private network එකක්. Internet එක ලෝකයේ ඕනෑම කෙනෙක්ට access කරන්න පුළුවන්.</p>
+      </details>
+    </div>
+  </section>
+
+  <div class="topic-divider">● ● ●</div>
+
+  <section>
+    <span class="badge">Topic 5</span>
+    <h2>Database — මූලික සංකල්ප</h2>
+
+    <p><strong>Database එකක් කියන්නේ මොකක්ද?</strong></p>
+    <p>Organized විදිහට, easily access කරගන්න/manage කරන්න/update කරන්න පුළුවන් විදිහට ගබඩා කරපු data collection එකක්.</p>
+    <p>උදා: School එකක student records, Bank එකක customer details, Shop එකක product inventory</p>
+
+    <h3 style="margin-top:18px;">Database Management System (DBMS)</h3>
+    <p>Database එක create කරන්න, manage කරන්න, query කරන්න උදව් කරන software එක.</p>
+    <ul>
+      <li>උදාහරණ: <strong>MySQL, Microsoft Access, Oracle, PostgreSQL</strong></li>
+    </ul>
+
+    <h3 style="margin-top:18px;">Database එකේ මූලික සංරචක — Visual Diagram</h3>
+    <p>පහත Student Table එක බලන්න — Field, Record, Primary Key කොහෙද කියලා පැහැදිලිව label කරලා තියෙනවා:</p>
+
+    <div class="diagram-box">
+      <table class="db-table">
+        <tr>
+          <th class="pk-col">Student_ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Class</th>
+        </tr>
+        <tr>
+          <td class="pk-col">S001</td>
+          <td>Kasun</td>
+          <td>17</td>
+          <td>12A</td>
+        </tr>
+        <tr>
+          <td class="pk-col">S002</td>
+          <td>Nimasha</td>
+          <td>16</td>
+          <td>11B</td>
+        </tr>
+        <tr>
+          <td class="pk-col">S003</td>
+          <td>Dinesh</td>
+          <td>17</td>
+          <td>12A</td>
+        </tr>
+      </table>
+      <p class="diagram-caption">
+        🟦 <strong>Column (Name, Age, Class)</strong> = Field &nbsp;|&nbsp;
+        🟩 <strong>එක row එක (S001, Kasun, 17, 12A)</strong> = Record &nbsp;|&nbsp;
+        🟨 <strong>Student_ID column</strong> = Primary Key (unique, duplicate වෙන්න බෑ)
+      </p>
+    </div>
+
+    <div class="component-block">
+      <h3>1. Table <span class="label-tag" style="background:#e8edf5;color:#1d4e89;">Excel sheet එකක් වගේ</span></h3>
+      <p>Data rows සහ columns විදිහට organize කරපු structure එක.</p>
+    </div>
+
+    <div class="component-block">
+      <h3>2. Field (Column) <span class="label-tag tag-field">Attribute එකක්</span></h3>
+      <p>Table එකේ එක attribute එකක් (උදා: Name, Age, Address). උඩ diagram එකේ <strong>Name</strong>, <strong>Age</strong>, <strong>Class</strong> columns ටික fields.</p>
+    </div>
+
+    <div class="component-block">
+      <h3>3. Record (Row) <span class="label-tag tag-record">Complete entry එකක්</span></h3>
+      <p>Table එකේ එක complete entry එකක් (එක student කෙනෙක්ගේ සියලුම details). උඩ diagram එකේ <strong>S001, Kasun, 17, 12A</strong> කියන row එක එක record එකක්.</p>
+    </div>
+
+    <div class="component-block">
+      <h3>4. Primary Key <span class="label-tag tag-pk">Unique ID</span></h3>
+      <p>Table එකේ row එකක් <strong>uniquely identify</strong> කරන field එක (duplicate වෙන්න බෑ). උදා: Student ID, NIC Number. උඩ diagram එකේ <strong>Student_ID</strong> column එක Primary Key.</p>
+    </div>
+
+    <h3 style="margin-top:22px;">Advantages of Database (Database වල වාසි)</h3>
+    <div class="device-row">
+      <div class="device-card">
+        <div class="icon">📉</div>
+        <div style="font-size:13px;">Data duplicate වීම අඩුයි</div>
+      </div>
+      <div class="device-card">
+        <div class="icon">🔍</div>
+        <div style="font-size:13px;">Search/update කරන්න ලේසියි</div>
+      </div>
+      <div class="device-card">
+        <div class="icon">👥</div>
+        <div style="font-size:13px;">Multiple users ට එකවර access</div>
+      </div>
+      <div class="device-card">
+        <div class="icon">🔒</div>
+        <div style="font-size:13px;">Security/backup පහසුයි</div>
+      </div>
+    </div>
+
+    <div class="tip">
+      💡 <strong>මතක තියාගන්න:</strong> Table = Excel sheet, Field = Column, Record = Row, Primary Key = Unique ID
+    </div>
+  </section>
+
+  <section>
+    <span class="badge">Practice</span>
+    <h2>Practice Quiz — Database (Questions 20)</h2>
+
+    <div class="quiz-q">
+      <p class="question">1. Database එකක් කියන්නේ මොකක්ද?</p>
+      <div class="options">
+        <div class="option">a) Random data ටිකක්</div>
+        <div class="option">b) Organized විදිහට ගබඩා කරපු data collection එකක්</div>
+        <div class="option">c) Hardware device එකක්</div>
+        <div class="option">d) Network topology එකක්</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Organized විදිහට ගබඩා කරපු data collection එකක්</strong> — Database එක easily access/manage/update කරගන්න පුළුවන් organized data collection එකක්.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">2. Database එක create කරන්න, manage කරන්න, query කරන්න උදව් කරන software එකට කියන්නේ කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) OS</div>
+        <div class="option">b) DBMS</div>
+        <div class="option">c) Compiler</div>
+        <div class="option">d) Driver</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) DBMS</strong> — DBMS (Database Management System) කියන්නේ database එක create/manage/query කරන්න උදව් කරන software එක.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">3. පහත දැක්වෙන ඒවායින් DBMS software එකක් නොවන්නේ කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) MySQL</div>
+        <div class="option">b) Oracle</div>
+        <div class="option">c) PostgreSQL</div>
+        <div class="option">d) Photoshop</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>d) Photoshop</strong> — Photoshop එක image editing software එකක්, DBMS එකක් නෙවෙයි. MySQL, Oracle, PostgreSQL තුනම DBMS examples.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">4. Data rows සහ columns විදිහට organize කරපු structure එකට කියන්නේ කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Field</div>
+        <div class="option">b) Record</div>
+        <div class="option">c) Table</div>
+        <div class="option">d) Key</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Table</strong> — Table එක Excel sheet එකක් වගේ, rows සහ columns වලින් සැදුණු structure එකක්.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">5. Table එකේ එක attribute එකකට (Name, Age වගේ) කියන්නේ කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Record</div>
+        <div class="option">b) Field</div>
+        <div class="option">c) Row</div>
+        <div class="option">d) Primary Key</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Field</strong> — Field එක table එකේ column එකකට corresponds වෙනවා, attribute එකක් represent කරනවා (උදා: Name, Age).</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">6. Table එකේ එක complete entry එකකට (එක student කෙනෙක්ගේ සියලුම details) කියන්නේ කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Field</div>
+        <div class="option">b) Column</div>
+        <div class="option">c) Record</div>
+        <div class="option">d) Database</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Record</strong> — Record එක table එකේ row එකකට corresponds වෙනවා, complete entry එකක් (එක student කෙනෙක්ගේ සියලුම data).</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">7. Table එකේ row එකක් uniquely identify කරන, duplicate වෙන්න බැරි field එකට කියන්නේ කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Foreign Key</div>
+        <div class="option">b) Primary Key</div>
+        <div class="option">c) Index</div>
+        <div class="option">d) Field</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Primary Key</strong> — Primary Key එක table එකේ row එකක් uniquely identify කරනවා, duplicate values තියෙන්න බෑ.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">8. Student Table එකක Primary Key එක ලෙස වඩාත් සුදුසු field එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Name</div>
+        <div class="option">b) Class</div>
+        <div class="option">c) Student_ID</div>
+        <div class="option">d) Age</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Student_ID</strong> — Name, Class, Age repeat වෙන්න පුළුවන් (students කිහිප දෙනෙක්ටම same name/class/age තියෙන්න පුළුවන්), ඒත් Student_ID එක unique.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">9. Database එකක Excel sheet එකකට සමාන component එක කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Field</div>
+        <div class="option">b) Table</div>
+        <div class="option">c) Record</div>
+        <div class="option">d) DBMS</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Table</strong> — Table එක Excel sheet එකක් වගේ, columns (fields) සහ rows (records) වලින් සැදුණා.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">10. NIC Number එකක් Primary Key එකක් ලෙස use කරන්න සුදුසු ඇයි?</p>
+      <div class="options">
+        <div class="option">a) ලස්සනයි</div>
+        <div class="option">b) හැම කෙනෙක්ටම unique එකක්</div>
+        <div class="option">c) Number එකක්</div>
+        <div class="option">d) කෙටියි</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) හැම කෙනෙක්ටම unique එකක්</strong> — Primary Key එකේ ප්‍රධාන requirement එක uniqueness — NIC Number එක දෙන්නෙක්ට same එක වෙන්න බෑ.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">11. Database use කිරීමේදී data duplicate වීම...</p>
+      <div class="options">
+        <div class="option">a) වැඩි වෙනවා</div>
+        <div class="option">b) අඩු වෙනවා</div>
+        <div class="option">c) වෙනසක් නෑ</div>
+        <div class="option">d) පාලනය කරන්න බෑ</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) අඩු වෙනවා</strong> — Database එකක ප්‍රධාන වාසියක් තමයි organized structure එක නිසා data duplication අඩු වීම.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">12. Database එකක multiple users ට...</p>
+      <div class="options">
+        <div class="option">a) එකවර access කරන්න බෑ</div>
+        <div class="option">b) එකවර access කරන්න පුළුවන්</div>
+        <div class="option">c) එක කෙනෙක්ට විතරයි access</div>
+        <div class="option">d) කිසිම කෙනෙක්ට access බෑ</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) එකවර access කරන්න පුළුවන්</strong> — Database එකේ advantage එකක් තමයි multiple users ට එකවර data access කරගන්න පුළුවන් වීම.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">13. Bank එකක customer details ගබඩා කරන්න use කරන්නේ කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Spreadsheet විතරක්</div>
+        <div class="option">b) Database</div>
+        <div class="option">c) Word document</div>
+        <div class="option">d) Presentation</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Database</strong> — Bank එකක customer records වගේ ලොකු, organized data, database එකක ගබඩා කරනවා.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">14. Field එකක් යනු කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Table එකේ row එකක්</div>
+        <div class="option">b) Table එකේ column එකක්</div>
+        <div class="option">c) සම්පූර්ණ Database එක</div>
+        <div class="option">d) DBMS software එක</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Table එකේ column එකක්</strong> — Field එක table එකේ column එකකට corresponds වෙනවා (attribute එකක්).</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">15. Record එකක් යනු කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Table එකේ column එකක්</div>
+        <div class="option">b) Table එකේ row එකක්</div>
+        <div class="option">c) Primary Key එකක්</div>
+        <div class="option">d) DBMS software එකක්</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Table එකේ row එකක්</strong> — Record එක table එකේ row එකකට corresponds වෙනවා, එක complete entry එකක්.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">16. Microsoft Access එක classify වෙන්නේ කුමක් ලෙසද?</p>
+      <div class="options">
+        <div class="option">a) Operating System</div>
+        <div class="option">b) DBMS</div>
+        <div class="option">c) Web Browser</div>
+        <div class="option">d) Device Driver</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) DBMS</strong> — Microsoft Access එක Database Management System එකක්, MySQL, Oracle වගේම.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">17. Shop එකක product inventory track කරන්න database එකක් use කරන්නේ ඇයි?</p>
+      <div class="options">
+        <div class="option">a) Search/update කරන්න අමාරුයි නිසා</div>
+        <div class="option">b) Data organize කරලා, easily search/update කරගන්න පුළුවන් නිසා</div>
+        <div class="option">c) Products track කරන්න බෑ නිසා</div>
+        <div class="option">d) කිසිම හේතුවක් නෑ</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Data organize කරලා, easily search/update කරගන්න පුළුවන් නිසා</strong> — Database එකේ ප්‍රධාන වාසිය තමයි data ලේසියෙන් search/manage කරගන්න පුළුවන් වීම.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">18. Primary Key එකේ අගයක් (value) duplicate වෙන්න පුළුවන්ද?</p>
+      <div class="options">
+        <div class="option">a) ඔව්, පුළුවන්</div>
+        <div class="option">b) නැහැ, බෑ — unique විය යුතුයි</div>
+        <div class="option">c) සමහර වෙලාවට පුළුවන්</div>
+        <div class="option">d) Primary Key එකකට value අවශ්‍ය නෑ</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) නැහැ, බෑ — unique විය යුතුයි</strong> — Primary Key එකේ core rule එක තමයි duplicate values තියෙන්න බැරි වීම, row එක uniquely identify කරන්න ඕන නිසා.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">19. School එකක student records database එකක ගබඩා කරන විට, "Class" කියන column එක classify වෙන්නේ කුමක් ලෙසද?</p>
+      <div class="options">
+        <div class="option">a) Record</div>
+        <div class="option">b) Primary Key</div>
+        <div class="option">c) Field</div>
+        <div class="option">d) DBMS</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>c) Field</strong> — "Class" කියන්නේ column එකක් (attribute එකක්), ඒ නිසා Field එකක්.</p>
+      </details>
+    </div>
+
+    <div class="quiz-q">
+      <p class="question">20. Database එකක security සහ backup ගැන සත්‍ය ප්‍රකාශය කුමක්ද?</p>
+      <div class="options">
+        <div class="option">a) Database වලට security/backup අවශ්‍ය නෑ</div>
+        <div class="option">b) Database එකකින් security/backup පහසු වෙනවා</div>
+        <div class="option">c) Database use කළාම data ආරක්ෂාව අඩුයි</div>
+        <div class="option">d) Backup එක manual file copy වලින් විතරයි කරන්න පුළුවන්</div>
+      </div>
+      <details>
+        <summary>Answer බලන්න</summary>
+        <p class="answer-explain"><strong>b) Database එකකින් security/backup පහසු වෙනවා</strong> — Database එකේ advantage එකක් තමයි built-in security features සහ backup mechanisms තියීම.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer>SFT — ICT Study Notes · Hardware, Number Systems, Software, Networking & Database</footer>
+
+</div>
+</body>
+</html>
+">N5 කාල වචන — සම්පූර්ණ ලැයිස්තුව සහ උදාහරණ</a></h2>
     <p class="excerpt">いつ、きょう、あした වැනි කාල සම්බන්ධී වචන මාලාවක් උදාහරණ වාක්‍ය සමඟ. පරිවර්තන පුහුණුවට ද ප්‍රයෝජනවත්.</p>
     <a class="read-more" href="computer-hardware-components-3.html">→ සම්පූර්ණ ලිපිය කියවන්න</a>
   </article>
