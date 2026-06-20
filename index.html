@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>උසස් සටහන් — Advance Level Notes & Help</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@400;600;700&family=Noto+Sans+Sinhala:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#2B2B2B;
+    --paper:#FAF6EE;
+    --paper-card:#FFFEFA;
+    --indigo:#1B2A4A;
+    --amber:#C8762A;
+    --sage:#7A8B6F;
+    --line:#E2D9C5;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px);
+    background-size: 100% 2.1rem;
+    color:var(--ink);
+    font-family:'Noto Sans Sinhala','Noto Serif Sinhala',serif;
+    line-height:1.9;
+  }
+  a{color:inherit;}
+
+  /* Header */
+  header{
+    background:var(--indigo);
+    color:var(--paper);
+    padding:3.2rem 1.5rem 2.6rem;
+    position:relative;
+    overflow:hidden;
+  }
+  header::after{
+    content:"";
+    position:absolute;
+    right:-40px; top:-40px;
+    width:200px; height:200px;
+    border:1px solid rgba(250,246,238,0.15);
+    border-radius:50%;
+  }
+  .eyebrow{
+    font-family:'Space Mono',monospace;
+    font-size:.7rem;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:#E8A35C;
+    margin:0 0 .8rem;
+  }
+  h1{
+    font-family:'Noto Serif Sinhala',serif;
+    font-weight:700;
+    font-size:clamp(2.1rem, 5vw, 3.2rem);
+    margin:0 0 .6rem;
+    max-width:14ch;
+  }
+  header p{
+    max-width:46ch;
+    color:#D7CDB8;
+    font-size:1.02rem;
+    margin:0;
+  }
+
+  /* nav / filter */
+  nav{
+    max-width:880px;
+    margin:0 auto;
+    padding:1.4rem 1.5rem 0;
+    display:flex;
+    gap:.6rem;
+    flex-wrap:wrap;
+  }
+  .tag-pill{
+    font-family:'Space Mono',monospace;
+    font-size:.72rem;
+    letter-spacing:.04em;
+    border:1px solid var(--indigo);
+    color:var(--indigo);
+    background:transparent;
+    padding:.4rem .9rem;
+    border-radius:2px;
+    cursor:pointer;
+    transition:.15s;
+  }
+  .tag-pill.active, .tag-pill:hover{
+    background:var(--indigo);
+    color:var(--paper);
+  }
+
+  main{
+    max-width:880px;
+    margin:0 auto;
+    padding:2rem 1.5rem 5rem;
+  }
+
+  .card{
+    background:var(--paper-card);
+    border:1px solid var(--line);
+    border-radius:3px;
+    padding:1.7rem 1.7rem 1.5rem;
+    margin-bottom:1.3rem;
+    position:relative;
+    box-shadow:0 1px 0 var(--line);
+    transition:transform .15s, box-shadow .15s;
+  }
+  .card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 14px -6px rgba(27,42,74,0.18);
+  }
+
+  .stamp{
+    position:absolute;
+    top:1.4rem; right:1.5rem;
+    font-family:'Space Mono',monospace;
+    font-size:.62rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    border:1.5px solid var(--amber);
+    color:var(--amber);
+    padding:.25rem .55rem;
+    border-radius:2px;
+    transform:rotate(3deg);
+    background:rgba(200,118,42,0.04);
+  }
+
+  .card .meta{
+    font-family:'Space Mono',monospace;
+    font-size:.72rem;
+    color:var(--sage);
+    margin:0 0 .5rem;
+  }
+  .card h2{
+    font-family:'Noto Serif Sinhala',serif;
+    font-size:1.35rem;
+    margin:0 0 .5rem;
+    padding-right:5.5rem;
+  }
+  .card h2 a{ text-decoration:none; }
+  .card h2 a:hover{ color:var(--amber); }
+  .card p.excerpt{
+    margin:0 0 .9rem;
+    color:#4a4a44;
+    font-size:.96rem;
+  }
+  .read-more{
+    font-family:'Space Mono',monospace;
+    font-size:.78rem;
+    color:var(--indigo);
+    text-decoration:none;
+    border-bottom:1px solid var(--amber);
+    padding-bottom:1px;
+  }
+
+  footer{
+    text-align:center;
+    padding:2.5rem 1.5rem 3rem;
+    color:var(--sage);
+    font-family:'Space Mono',monospace;
+    font-size:.75rem;
+    letter-spacing:.04em;
+  }
+
+  @media(max-width:480px){
+    .stamp{ position:static; display:inline-block; margin-bottom:.6rem; transform:rotate(0); }
+    .card h2{ padding-right:0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">REFERENCE DESK · 参考デスク</p>
+  <h1>උසස් සටහන් සහ උදව්</h1>
+  <p>භාෂාව, තාක්ෂණය සහ විභාග සඳහා සංවිධිත සටහන් — මගේම අධ්‍යයන ගමන සටහන් කරගන්නා, අන් අයටත් ප්‍රයෝජනවත් වෙතැයි බලාපොරොත්තු වෙන ලිපි එකතුවක්.</p>
+</header>
+
+<nav id="filters">
+  <button class="tag-pill active" data-tag="all">සියල්ල</button>
+  <button class="tag-pill" data-tag="japanese">日本語 · ජපන්</button>
+  <button class="tag-pill" data-tag="ict">ICT</button>
+  <button class="tag-pill" data-tag="cyber">Cybersecurity</button>
+  <button class="tag-pill" data-tag="life">ජීවිතය</button>
+</nav>
+
+<main id="postList">
+  <!-- POST CARD TEMPLATE — duplicate this block for each new post -->
+  <article class="card" data-tag="japanese">
+    <span class="stamp">日本語</span>
+    <p class="meta">2026.06.20 &nbsp;·&nbsp; කියවීමේ කාලය 4 min</p>
+    <h2><a href="posts/n5-time-expressions.html">N5 කාල වචන — සම්පූර්ණ ලැයිස්තුව සහ උදාහරණ</a></h2>
+    <p class="excerpt">いつ、きょう、あした වැනි කාල සම්බන්ධී වචන මාලාවක් උදාහරණ වාක්‍ය සමඟ. පරිවර්තන පුහුණුවට ද ප්‍රයෝජනවත්.</p>
+    <a class="read-more" href="posts/n5-time-expressions.html">→ සම්පූර්ණ ලිපිය කියවන්න</a>
+  </article>
+
+  <article class="card" data-tag="ict">
+    <span class="stamp">ICT</span>
+    <p class="meta">2026.06.18 &nbsp;·&nbsp; කියවීමේ කාලය 6 min</p>
+    <h2><a href="posts/memory-vs-storage.html">මතකය (Memory) සහ ආචයනය (Storage) අතර වෙනස</a></h2>
+    <p class="excerpt">RAM, ROM, HDD, SSD — මේ සියල්ල අතර වෙනස සරලව, උදාහරණ සහිතව. විභාග ප්‍රශ්න සඳහා සැකසූ සාරාංශයක් සමඟ.</p>
+    <a class="read-more" href="posts/memory-vs-storage.html">→ සම්පූර්ණ ලිපිය කියවන්න</a>
+  </article>
+
+  <article class="card" data-tag="cyber">
+    <span class="stamp">Cyber</span>
+    <p class="meta">2026.06.15 &nbsp;·&nbsp; කියවීමේ කාලය 5 min</p>
+    <h2><a href="posts/wifi-pentest-basics.html">WiFi ආරක්ෂාව ඉගෙනීම ආරම්භ කරන්නේ කෙසේද</a></h2>
+    <p class="excerpt">Kali Linux, Aircrack-ng වැනි මෙවලම් ආචාර ධාර්මික ලෙස ඉගෙනගැනීම සඳහා මූලික මාර්ගෝපදේශයක්.</p>
+    <a class="read-more" href="posts/wifi-pentest-basics.html">→ සම්පූර්ණ ලිපිය කියවන්න</a>
+  </article>
+</main>
+
+<footer>
+  PRINTED LOCALLY · HOSTED FREE · UPDATED REGULARLY
+</footer>
+
+<script>
+  const pills = document.querySelectorAll('.tag-pill');
+  const cards = document.querySelectorAll('.card');
+  pills.forEach(p=>{
+    p.addEventListener('click', ()=>{
+      pills.forEach(x=>x.classList.remove('active'));
+      p.classList.add('active');
+      const tag = p.dataset.tag;
+      cards.forEach(c=>{
+        c.style.display = (tag==='all' || c.dataset.tag===tag) ? '' : 'none';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
